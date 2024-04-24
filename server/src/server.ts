@@ -26,7 +26,7 @@ app.get("/games", async (request, response) => {
     include: {
       _count: {
         select: {
-          Ads: true
+          ads: true
         }
       }
     }
@@ -102,4 +102,4 @@ app.get("/ads/:id/discord", async (request, response) => {
 
 });
 
-app.listen(3001);
+app.listen(3333);
