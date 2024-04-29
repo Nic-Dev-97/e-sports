@@ -45,8 +45,8 @@ const ad = await prisma.ad.create({
     yearsPlaying: body.yearsPlaying,
     discord: body.discord,
     weekDays: body.weekDays.join(','),
-    hourStart: convertHourStringToMinutes (body.hoursStart),
-    hourEnd: convertHourStringToMinutes (body.hoursEnd),
+    hourStart: convertHourStringToMinutes (body.hourStart),
+    hourEnd: convertHourStringToMinutes (body.hourEnd),
     useVoiceChannel: body.useVoiceChannel,
   }
 });
